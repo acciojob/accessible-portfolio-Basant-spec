@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<tittle>Accessible Portfolio</tittle>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio - John Doe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<nav style="background-color: lightgrey; padding: 10px;text-align: center;word-spacing: 50px;">
-        <a href="#home" >Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+    <!-- Navigation Bar with ARIA role "navigation" -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-	<img source="https://upload.wikimedia.org/wikipedia/commons/c/cf/BassetHound_profil.jpg" alt="will be seen soon">
-     <ul class="ul">
-       <li>item 1 </li>
-		 <li>item 2</li>
-		 <li>item 3</li>
-		 <li>item 4</li>
-		 
-	 </ul>
 
-	
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-		
-</script>
+    <!-- Header Section with ARIA role "heading" -->
+    <header>
+        <h1 role="heading">John Doe - Web Developer</h1>
+    </header>
+
+    <!-- About Section with Image and Description -->
+    <section id="about">
+        <img src="profile.jpg" alt="John Doe smiling" role="img" class="profile-image">
+        <p>Hello! I'm John, a web developer passionate about creating accessible, user-friendly websites.</p>
+    </section>
+
+    <!-- Projects Section with a List of Projects -->
+    <section id="projects">
+        <h2 role="heading">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Responsive Portfolio</li>
+            <li role="listitem">E-commerce Website</li>
+            <li role="listitem">Blog Platform</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 role="heading">Get in Touch</h2>
+        <p>Feel free to reach out at <a href="mailto:john.doe@example.com">john.doe@example.com</a>.</p>
+    </section>
 
 </body>
-
 </html>
